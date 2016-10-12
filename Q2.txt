@@ -1,18 +1,17 @@
-javascript:
+Javascript:
+
 var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
 var x=a.length -1;
-while (x>0){
-	x=x-2;
+while (x>=0){
 	console.log(a[x].toUpperCase());
-	x=x-1;
+	x -=3;
 }
 
 Ruby:
 
 a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
- x=a.length-1
-while x>0
- 	x=x-2
+x=a.length-1
+while x>=0
 	puts a[x].upcase
-	x=x-1
+	x -=3
 end
