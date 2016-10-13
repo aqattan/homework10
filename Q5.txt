@@ -1,0 +1,1 @@
+Can't because Ruby works only on server side. HTML, CSS and Javascript work on client side. 
