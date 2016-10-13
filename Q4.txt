@@ -1,0 +1,28 @@
+JavaScript:
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+var x=0;
+var isprint=true;
+while (x<a.length){
+	if (isprint){
+	   console.log(a[x]);
+	}
+    isprint= !isprint;
+	console.log(a[x].split("").reverse().join(""));
+	x+=1;
+}
+
+Ruby:
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
+x=0
+isprint =true
+a.each do |e|
+	if isprint
+		puts a[x]
+	end
+		isprint= !isprint
+		puts a[x].reverse
+	
+	x+=1
+end
