@@ -28,18 +28,18 @@ Ruby:
  c=[]
  d=[]
  z=[]
-while x<b.length
+b.each do |e|
   if b[x]%2 != 0
 	c[x]=b[x]*2
 	puts c[x]
-end	
-  if b[x]%2 == 0
+
+  elsif
 	d[x]=b[x]-1
 	puts d[x]
 end
   if b[x]%5 == 0
-	z[x]=b[x] ** 2
-	puts z[x]
+	 z[x]=b[x] ** 2
+	 puts z[x]
 end
 
 	x=x+1
