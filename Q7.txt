@@ -1,0 +1,27 @@
+Javascript:
+
+var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
+var x=0;
+var y=[b.length];
+console.log (b);
+while (x<b.length){
+	y[x]=(2/3)*b[x]+(1/2);
+	console.log (y[x]);
+	y[x]=b[x]*y[x];
+	console.log (y[x]);
+	x+=1;
+}
+
+Ruby:
+
+b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
+x=0;
+y=[b.length]
+puts b
+b.each do |e|
+	y[x]= 2/3.to_f * b[x] + 1/2.to_f
+	puts y[x]
+	y[x]=b[x]*y[x]
+	puts y[x]
+	x+=1
+end
