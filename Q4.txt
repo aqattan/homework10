@@ -1,0 +1,22 @@
+JavaScript:
+
+var a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"];
+for (x=0; x<a.length; ++x){
+	if (x%2===0){
+	   console.log(a[x]);
+	}
+    else
+	console.log(a[x].split("").reverse().join(""));
+}
+
+Ruby:
+
+a = ["john", "mike", "susan", "matt", "joe", "larry", "ken", "samantha", "jenny", "Sara", "henry"]
+	a.each_with_index {|val, index|
+	if index.even?
+		puts val
+	else
+		puts val.reverse
+	
+	end
+}
