@@ -20,6 +20,12 @@ while (x<b.length){
 	}
 	x=x+1;
 }
+}
+for (x=0; x<=10; x++){
+if (b[x]%10===0){
+	console.log (b[x]);
+}
+}
 
 Ruby:
 
@@ -43,4 +49,9 @@ end
 end
 
 	x=x+1
+end
+(0..10).each do |x|
+	if b[x]%10 == 0
+		puts b[x]
+end
 end
