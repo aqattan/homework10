@@ -1,27 +1,40 @@
 Javascript:
 
 var b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50];
-var x=0;
 var y=[b.length];
+var z=[];
+var l=0;
 console.log (b);
-while (x<b.length){
+for (x=0; x<b.length; ++x){
 	y[x]=(2/3)*b[x]+(1/2);
 	console.log (y[x]);
-	y[x]=b[x]*y[x];
-	console.log (y[x]);
-	x+=1;
+}
+for (x=0; x<b.length; ++x){
+for (i=0; i<y.length; ++i){
+	z[l]=(b[x]*y[i]);
+	console.log(z[l]);
+	}
 }
 
 Ruby:
 
 b = [5, 10, 23, 10, 7, 9, 39, 16, 1, 12, 36, 20, 50]
-x=0;
-y=[b.length]
+x=0
+i=0
+l=0
+y=[]
+z=[]
 puts b
-b.each do |e|
-	y[x]= 2/3.to_f * b[x] + 1/2.to_f
-	puts y[x]
-	y[x]=b[x]*y[x]
-	puts y[x]
-	x+=1
+for x in 0..b.length - 1
+++x
+	y[i]= 2/3.to_f * b[x] + 1/2.to_f
+	puts y[i]
+end
+for x in 0..b.length - 1 
+	++x
+    for i in 0..y.length - 1 
+    ++i
+    z[l]=b[x] * y[i]
+	puts z[l]
+end
 end
